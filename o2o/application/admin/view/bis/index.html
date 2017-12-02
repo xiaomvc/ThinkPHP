@@ -1,0 +1,64 @@
+
+{include file="public/header" /}
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 商户列表</nav>
+<div class="page-container">
+
+
+    <div class="mt-20">
+        <table class="table table-border table-bordered table-bg table-hover table-sort">
+            <thead>
+            <tr class="text-c">
+                <th width="80">ID</th>
+                <th width="100">商户名称</th>
+                <th width="30">法人</th>
+                <th width="150">联系电话</th>
+                <th width="60">申请时间</th>
+                <th width="60">状态</th>
+                <th width="100">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {volist name="bisInfo" id="vo"}
+            <tr class="text-c">
+                <td>{$vo.id}</td>
+                <td>{$vo.name}</td>
+                <td class="text-c">{$vo.faren}</td>
+                <td class="text-c">{$vo.faren_tel}</td>
+                <td>{$vo.create_time}</td>
+                <td class="td-status">
+                    {if condition='$vo.status eq 0'}
+                          <a title="重新提交审核" href="{:URL('bis/status',['id'=>$vo.id,'status'=>-1])}">
+                    {else}
+                          <a title="撤销商户资格" href="{:URL('bis/status',['id'=>$vo.id,'status'=>$vo.status==1?-1:1])}">
+                    {/if}
+                              {$vo.status|status}</a></td>
+
+
+                <td class="f-14">
+
+                    <a title="商家详细信息"
+                       href=" {:URL('bis/detail',['id'=>$vo.id])}" target="_blank"
+                       style="text-decoration:none">
+                        商家详细信息</a>
+
+                    <a title="编辑商家"
+                       href=" {:URL('bis/detail?id='.$vo.id)}" target="_blank"
+                       style="text-decoration:none">
+                        <i class="Hui-iconfont">&#xe6df;</i></a>
+                    <a title="删除" href="javascript:;" onclick="del_info(this,'{$vo.id}','{:URL('bis/del')}')"
+                       class="ml-5"
+                       style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                </td>
+
+            </tr>
+            {/volist}
+
+            </tbody>
+
+        </table>
+
+
+    </div>
+    <!--包含头部文件-->
+{include file="public/footer"/}

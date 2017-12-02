@@ -1,0 +1,175 @@
+{include file="public/header" /}
+
+<body>
+<article class="page-container" style="">
+    <form class="form form-horizontal" style="" method="post" action="{:URL('bis/user/register')}">
+        <p style="color:blue;"> 基本信息：</p>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>商户名称：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text bisName" placeholder="商户名称" name="bisName">
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属城市：</label>
+            <div class="formControls col-xs-8 col-sm-2">
+				<span class="select-box">
+				<select name="fi_city_id" class="select cityId" onchange="changeCityId()">
+                  <option value="0">--请选择--</option>
+                    {volist name='firstCityInfo' id='ff'}
+                      <option value="{$ff.id}">{$ff.name}</option>
+                    {/volist}
+                </select>
+				</span>
+            </div>
+            <div class="formControls col-xs-8 col-sm-2">
+				<span class="select-box">
+                    <!--二级城市信息-->
+				<select name="se_city_id" class="select se_city_id">
+
+                </select>
+				</span>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">缩略图：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <img id="imgShow1" width="150" height="150" style="display: none;"/>
+                <button type="button" class="layui-btn demo" ><i class="layui-icon"></i>上传图片</button>
+
+                <input type="hidden" value="" name=" logo">
+            </div>
+        </div>
+        <div class="row cl" style="padding-top:20px;">
+            <label class="form-label col-xs-4 col-sm-2">营业执照：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <img src="" id="imgShow2" width="150" height="150" style="display: none"/>
+                <button type="button" class="layui-btn demo" ><i class="layui-icon"></i>上传图片</button>
+                <input type="hidden" value="" name="licence_logo">
+            </div>
+        </div>
+
+        <div class="row cl" style="">
+            <label class="form-label col-xs-4 col-sm-2">商户介绍：</label>
+            <textarea name="description" id="editorOne" style="width: 500px; "
+                      class="formControls col-xs-8 col-sm-3"></textarea>
+            <div class="row cl" style="clear: both;">
+                <label class="form-label col-xs-4 col-sm-2">银行账号:</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <input type="text" class="input-text" value="" placeholder="" name="bank_info">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">开户行名称:</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <input type="text" class="input-text" value="" placeholder="" name="bank_name">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">开户行姓名:</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <input type="text" class="input-text" value="" placeholder="" name="bank_user">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">法人:</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <input type="text" class="input-text" value="" placeholder="" name="faren">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">法人电话:</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <input type="text" class="input-text" value="" placeholder="" name="faren_tel">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>邮箱：</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <input  type="text" class="input-text email" value="" placeholder="" name="email">
+                </div>
+            </div>
+            <p style="color:blue"> 总店信息：</p>
+            <div class="row cl" style="clear: both;">
+                <label class="form-label col-xs-4 col-sm-2">用户名:</label>
+                <div class="formControls col-xs-8 col-sm-3" style="padding-left: 15px;">
+                    <input type="text" class="input-text" value="" placeholder=""
+                           name="username">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">电话:</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <input type="text" class="input-text" value="" placeholder="" name="tel">
+                </div>
+            </div>
+
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属分类：</label>
+                <div class="formControls col-xs-8 col-sm-3"> <span class="select-box">
+				<select name="category_id" class="select categoryId" onchange="changeCategory()">
+                  <option value="0">请选择</option>
+                        {foreach name='firstCategory' item='fc'}
+                                    <option value="{$fc.id}">{$fc.name}</option>
+
+                    {/foreach}
+                </select>
+				</span>
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">所属子类：</label>
+
+                <div class="check-box se_category_id">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">商户地址：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="" placeholder=""
+                       name="address">
+
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">营业时间:</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="" placeholder=""
+                       name="open_time">
+            </div>
+        </div>
+
+        <div class="row cl" style="">
+            <label class="form-label col-xs-4 col-sm-2">门店简介：</label>
+            <textarea name="content" id="editorTwo" style="width: 500px; "
+                      class="formControls col-xs-8 col-sm-3"></textarea>
+
+
+        </div>
+		<p style="color:blue;"> 账号信息：</p>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">登录名称:</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text denglu" placeholder="登录时的用户名"
+                       name="denglu">
+            </div>
+        </div><div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">账号密码:</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" placeholder=""
+                       name="password">
+            </div>
+        </div>
+        </div>
+        <div style=" text-align:center; "><input id="button" type="button" value="提交申请"
+                                                 style="font-size: 16px; color: blue;"/></div>
+    </form>
+</article>
+
+{include file='public/register'/}
+{include file='public/footer'/}

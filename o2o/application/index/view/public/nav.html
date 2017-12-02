@@ -1,0 +1,103 @@
+</head>
+<body>
+
+<div class="header-bar">
+    <div class="header-inner">
+        <ul class="father">
+            <li><a>{$cityName}</a></li>
+            {if condition="request()->controller() eq 'Index'"}
+            <li>|</li>
+            <li class="city">
+                <a>切换城市<span class="arrow-down-logo"></span></a>
+                <div class="city-drop-down">
+                    <h3>热门城市</h3>
+                    <ul class="son">
+                        {volist name="city" id="vo"}
+                        <li style="float:left"><a href="{:URL('index',['cityId'=>$vo.id])}">{$vo['name']}</a></li>
+                        {/volist}
+                    </ul>
+
+                </div>
+            </li>
+            {/if}
+            <li><a href="/bis/user/login" style="margin-right:6px ">商户中心</a></li>
+            <!--<li><a href="{:URL('admin/index/index')}" style="margin-left: -8px;">后台管理</a></li>-->
+	   <li></li>
+            <li>|</li>
+
+            {notempty name='userName'}
+            <li><a href="javascript:confirm('是否确认退出')?exit('/index/user/exitLogin'):false;">退出登录</a></li>
+            <li>|</li>
+            <li style="color:blue;">欢迎：{$userName}</li>
+            {else/}
+            <li><a href="{:URL('index/user/register')}">注册</a></li>
+            <li>|</li>
+            <li><a href="{:URL('index/user/login')}">登录</a></li>
+            {/notempty}
+        </ul>
+    </div>
+</div>
+
+<div class="nav-bar-header">
+    <div class="nav-inner">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <span class="item">全部分类</span>
+                {if condition="request()->controller() eq 'Index'"}
+                <div class="left-menu">
+                    {volist name='firstCategory' id='vv'}
+                    <div class="level-item">
+
+                        <div class="first-level">
+                            <dl>
+                                <dt class="title"><a href="javascrpit:;" target="_top">{$vv['name']}</a></dt>
+								{present  name="se_category[$vv.id]"}
+                                {foreach name='se_category[$vv.id]' item='v1' length='2'}
+                                <!--二级分类栏目中的热门的两个-->
+                                <dd><a href="/index/lists/index?categoryId={$v1.id}" target="_top" class="">{$v1['name']}</a>
+                                </dd>
+                                {/foreach}
+								{/present}
+                            </dl>
+                        </div>
+                        <div class="second-level">
+                            <div class="section">
+                                <div class="section-item clearfix no-top-border">
+                                    <h3>热门分类</h3>
+                                    <ul>
+									{present  name="se_category[$vv.id]"}
+                                        {volist name='se_category[$vv.id]' id='v2'}
+                                        <li><a href="/index/lists/index?categoryId={$v2.id}" {if
+                                               condition="$v2.listorder neq 0" }class="hot" {/if}>{$v2.name}</a>
+                                        </li>
+                                        {/volist}
+									{/present}
+                                    </ul>
+                                </div>
+                                <div class="section-item clearfix">
+                                    <h3>热门分类</h3>
+                                    <ul>
+									{present  name="se_category[$vv.id]"}
+                                        {volist name='se_category[$vv.id]' id='v2'}
+                                        <li><a href="/index/lists/index?categoryId={$v2.id}" {if
+                                               condition="$v2.listorder neq 0" }class="hot" {/if}>{$v2.name}</a>
+                                        </li>
+                                        {/volist}
+									{/present}
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    {/volist}
+                </div>
+
+                {/if}
+            </li>
+            <li class="nav-item"><a href="{:url('index/index/index')}" class="item first active">首页</a></li>
+            <li class="nav-item"><a class="item">团购</a></li>
+            <li class="nav-item"><a class="item">商户</a></li>
+        </ul>
+    </div>
+</div>

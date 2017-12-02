@@ -1,0 +1,29 @@
+{include file="public/header"}
+<article>
+  <div class="container">
+    <h2 class="ctitle"><b>图书分享</b> <span>好咖啡要和朋友一起品尝，好“书籍”也要和同样喜欢它的人一起分享。</span></h2>
+    <nav data-scroll-reveal="enter bottom over 1s a<dir 1s" style="text-indent: 2em;font-size: 18px;color:#000000;"><a href="{:url('share/add')}"><span>添加图书</span></a></nav>
+    <div class="blog" data-scroll-reveal="enter top" >
+
+      {volist name="books" id="vo" }
+      <figure>
+        <ul>
+          <a href="javascript:;"><img src="{$vo.logo}"><span>阅读，使人更美</span></a>
+        </ul>
+        <p><a href="{$vo.url}" target="_blank">{$vo.title}</a></p>
+        <figcaption>{:cutstr_html($vo.introduce,100)}
+          <a href="{:url('admin/share/more',['id'=>$vo.id])}" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+          <a href="{:url('admin/share/edit',['id'=>$vo.id])}" target="_blank" class="edit">编辑&gt;></a>
+          <a href="javascript:;" class="deal" onclick="deal({$vo.id},'/admin/share/deal',this.parentNode.parentNode)">删除>></a>
+        </figcaption>
+      </figure>
+
+    {/volist}
+    </div>
+    <div class="page">{:paginate($books)}</div>
+  </div>
+  </aside>
+</article>
+<footer> Design by DanceSmile 蜀ICP备11002373号-1</footer>
+
+</body></html>

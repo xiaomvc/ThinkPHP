@@ -1,0 +1,75 @@
+{include file='public/header'}
+<![endif]-->
+<title>分类管理</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
+    <span class="c-gray en">&gt;</span>
+    系统管理
+    <span class="c-gray en">&gt;</span>
+    分类栏目管理
+    <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px"
+       href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container">
+
+    <div class="cl pd-5 bg-1 bk-gray mt-20">
+		<span class="l">
+		<a class="btn btn-primary radius" onclick="add_info('添加栏目','{:URL('category/add')}',700,520)"
+           href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加栏目</a>
+		</span>
+    </div>
+    <div class="mt-20">
+        <table class="table table-border table-bordered table-hover table-bg">
+            <thead>
+            <tr class="text-c">
+                <th width="30">ID</th>
+                <th width="80">栏目名称</th>
+                <th width="30">排列序号</th>
+                <th width="50">新增时间</th>
+                <th width="50">发布状态</th>
+                <th width="80">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {foreach name='category' item='vv'}
+            <tr class="text-c">
+
+                <td>{$vv.id}</td>
+                <td>{$vv.name}</td>
+                <td>{$vv.listorder}</td>
+                <td>{$vv.create_time}</td>
+                <!--预先设置好的status规则，$vv.status是传递的参数信息-->
+                <!--{$vv.status|status}-->
+                <td><a href="{:URL('status',['id'=>$vv.id,'status'=>$vv.status==1?-1:1])}"
+                       title="点击编辑">{$vv.status|status}</a></td>
+                <td class="f-14">
+                    {if condition="$vv.status eq 1 && $vv.parent_id eq 0 "}
+
+                    <a title="获取子栏目"  href="javascript:;"
+                       onclick="edit_info('子栏目列表','{:URL('category/show',['id'=>$vv.id,'parentId'=>$vv.id])}','1','750','520')"
+                       style="text-decoration:none">
+                        获取子栏目</a>
+                    {else}
+
+                    {if condition=" $vv.parent_id eq 0"}
+                    <a style="color:red;" href="javascript:;">等待审核</a>
+                    {/if}
+                    {/if}
+                    <a title="编辑" href="javascript:;"
+                       onclick="edit_info('栏目编辑','{:URL('category/edit',['id'=>$vv.id])}','1','700','480')"
+                       style="text-decoration:none">
+                        <i class="Hui-iconfont">&#xe6df;</i></a>
+                    <a title="删除" href="javascript:;" onclick="del_info(this,'{$vv.id}','{:URL("del")}')" class="ml-5"
+                       style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                </td>
+
+            </tr>
+            {/foreach}
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--footer-->
+{include file='public/footer'/}

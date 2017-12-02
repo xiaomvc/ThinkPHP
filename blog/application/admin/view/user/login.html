@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <!--没有透明层的样式-->
+    <link href="__STATIC__/index/css/login.css" rel="stylesheet"  >
+
+    <!--//jQuery-->
+    <script type="text/javascript" src="__STATIC__/common/js/jquery-3.2.1.min.js"></script>
+    <!--//layUI-->
+    <link href="__STATIC__/layui/css/layui.css" rel="stylesheet">
+    <script type="text/javascript" src="__STATIC__/layui/layui.js"></script>
+    <script type="text/javascript" src="__STATIC__/common/js/check.js" ></script>
+    <script type="text/javascript" src="__STATIC__/index/js/login.js" ></script>
+    <script type="text/javascript" src="__STATIC__/common/js/base.js" ></script>
+</head>
+<body>
+
+<form action="/admin/user/login" method="post">
+    <div class="right">
+        <div class="righttop">登录&nbsp;</div>
+        <div id="log-form" class="rightmid">
+            <div class="log-input-container">
+                <div class="clear" style="font-size:0px;"></div>
+                <div class="log-line log-line-hover" id="rowCacct">
+                    <input id="log-cacct" type="text" autocomplete="off" maxlength="34" class="log-input input2" name="login" placeholder="账号">
+                    <div class="logIco logIcoCacct">&nbsp;</div>
+                </div>
+                <div class="log-line" id="rowPwd">
+                    <input id="log-pwd" type="password" autocomplete="new-password" maxlength="20" class="log-input input2" name="pwd" placeholder="密码">
+                    <div class="logIco logIcoPwd">&nbsp;</div>
+                </div>
+                <div id="log-valid-line" class="log-line">
+                    <input id="log-valid" type="text" class="log-input input2" style="width:116px; padding-left:12px;" name="verify" placeholder="验证码">
+                    <img id="log-valid-img" class="verify" onclick="verifyImg(this)" title="看不清？点击换一张" src="{:url('admin/user/verifyImg')}">
+                </div>
+            </div>
+            <div id="login-button" class="loginBtn">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</div>
+            <div class="clear"></div>
+            <div class="login_otherAcct">
+                <span class="login_other">其他帐号登录</span>
+                <a class="login_WeChatI" href="javascript:;" onclick="bindWeChat();" title="微信登录"></a>
+                <a class="login_QQI" href="javascript:;" onclick="bindQQAccount();" title="QQ登录"></a>
+
+            </div>
+            <div>后台不对外开放</div>
+
+
+        </div>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,132 @@
+{include file='public/header,public/nav'/}
+<link rel="stylesheet" type="text/css" href="__STATIC__/index/css/footer.css"/>
+<div class="page-body">
+    <div class="filter-bg">
+        <div class="filter-wrap">
+            <div class="w-filter-ab-test">
+                <div class="w-filter-top-nav clearfix" style="margin:12px">
+
+                </div>
+
+                <div class="filter-wrapper">
+                    <div class="normal-filter ">
+                        <div class="w-filter-normal-ab  filter-list-ab">
+                            <h5 class="filter-label-ab">分类</h5>
+                            <span class="filter-all-ab">
+                                    <a href="/index/lists/index" class="w-filter-item-ab  item-all-auto-ab"><span
+                                            class="item-content {if condition='$categoryId eq 0'}filter-active-all-ab{/if} ">全部</span></a>
+                                </span>
+                            <div class="j-filter-items-wrap-ab filter-items-wrap-ab">
+                                <div class="j-filter-items-ab filter-items-ab filter-content-ab">
+                                    {volist name='firstCategory' id='vv'}
+                                    <a href="/index/lists/index?categoryId={$vv['id']}" class="w-filter-item-ab "><span
+                                            class='item-content {if condition="$categoryId eq $vv->id"}filter-active-all-ab{/if}'>{$vv.name}</span></a>
+                                    {/volist}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="filter-wrapper">
+                    <div class="normal-filter " style="margin-bottom:10px">
+                        <div class="w-filter-normal-ab  filter-list-ab">
+                            <h5 class="filter-label-ab" >子分类</h5>
+                            <span class="filter-all-ab">
+
+                                </span>
+                            <div class="j-filter-items-wrap-ab filter-items-wrap-ab">
+                                <div class="j-filter-items-ab filter-items-ab filter-content-ab">
+                                    {volist name='secondCategory' id='vv'}
+                                    <a href="/index/lists/index?categoryId={$vv['id']}"
+                                       class="w-filter-item-ab"><span
+                                            class="item-content {if condition='$se_categoryId eq $vv->id'}filter-active-all-ab{/if}">{$vv.name}</span></a>
+                                    {/volist}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-sort-bar">
+                <div class="bar-area"
+                     style="position: relative; left: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; top: 0px;">
+                        <span class="sort-area">
+                            <a href="/index/lists/index?categoryId={$se_categoryId}" class="sort-default {if condition='$orderId eq ""'}sort-default-active{/if}">默认</a>
+                            <a href="/index/lists/index?categoryId={$se_categoryId}&order_count=1"
+                               class="sort-item sort-down {if condition='$orderId eq "order_count"'}sort-default-active{/if}"
+                               title="点击按销量降序排序">销量↓</a>
+                            <a href="/index/lists/index?categoryId={$se_categoryId}&order_price=1"
+                               class="sort-item price-default price {if condition='$orderId eq "order_price"'}sort-default-active{/if}"
+                               title="点击按价格降序排序">价格↓</a>
+
+                            <a href="/index/lists/index?categoryId={$se_categoryId}&order_time=1"
+                               class="sort-item sort-up {if condition='$orderId eq "order_time" '}sort-default-active{/if}"
+                               title="发布时间由近到远">最新发布↑</a>
+                        </span>
+
+                </div>
+            </div>
+            <ul class="itemlist eight-row-height">
+                {notempty name='dealInfo'}
+                {volist name='dealInfo' id='vv'}
+                <li class="j-card" >
+                    <a>
+                        <div class="imgbox">
+                            {if condition="$vv['buy_count'] gt 8"}
+                            <ul class="marketing-label-container">
+                                <li class="marketing-label marketing-free-appoint"></li>
+                            </ul>
+                            {/if}
+                            <div class="range-area">
+                                <div class="range-bg"></div>
+                                <div class="range-inner">
+
+                                </div>
+                            </div>
+                            <div class="borderbox">
+                                <a style="z-index: 3" target="_blank" href="{:url('index/detail/index',['id'=>$vv.id])}"><img
+                                        src="__STATIC__/index/images/timg.jpg"/></a>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="contentbox">
+                        <a target="_blank" href="{:url('index/detail/index',['id'=>$vv.id])}">
+                            <div class="header">
+                                <h4 class="title ">【{$vv['category_id']}店通用】</h4>
+                                <div class="collected">精选</div>
+                            </div>
+                            <p>{$vv['notes']|html_entity_decode}</p>
+                        </a>
+                        <div class="add-info"></div>
+                        <div class="pinfo">
+                            <span class="price"><span class="moneyico">¥{$vv['current_price']}</span></span>
+                            <span class="ori-price">价值<span
+                                    class="price-line">¥{$vv['origin_price']}<span></span></span></span>
+                        </div>
+                        <div class="footer">
+                            <span class="sold">已售{$vv['buy_count']}</span>
+                            <div class="bottom-border"></div>
+                        </div>
+                    </div>
+                </li>
+                {/volist}
+                {else}
+                <P style="font-size: 20px ;color: #ff0000; text-align:center" >该分类没数据</P>
+                {/notempty}
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</div>
+{:paginate($dealInfo)}
+<!--//引入封装好的js文件-->
+<script src="__STATIC__/index/js/common.js"></script>
+
+{include file='public/footer'/}

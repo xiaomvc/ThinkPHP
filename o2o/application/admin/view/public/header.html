@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="Bookmark" href="/favicon.ico">
+    <link rel="Shortcut Icon" href="/favicon.ico"/>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="__STATIC__/admin/lib/html5shiv.js"></script>
+    <script type="text/javascript" src="__STATIC__/admin/lib/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="__STATIC__/admin/css/H-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/admin/css/H-ui.admin.css"/>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/admin/lib/Hui-iconfont/1.0.8/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/admin/skin/blue/skin.css" id="skin"/>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/admin/css/style.css"/>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="__STATIC__/admin/lib/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+    <script type="text/javascript" src="__STATIC__/admin/lib/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript" src="__STATIC__/admin/lib/layer/2.4/layer.js"></script>
+    <script type="text/javascript" src="__STATIC__/admin/js/H-ui.min.js"></script>
+
+    <!--请在下方写此页面业务相关的脚本-->
+    <script type="text/javascript" src="__STATIC__/admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+    <script type="text/javascript" src="__STATIC__/admin/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+    <script type="text/javascript" src="__STATIC__/admin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+
+    <script type="text/javascript" src="__STATIC__/admin/js/H-ui.admin.js"></script>
+    <script type="text/javascript" src="__STATIC__/admin/js/common.js"></script>
+    <script type="text/javascript" src="__STATIC__/common/selectChange.js"></script>
+
+    <!--&lt;!&ndash;//定义的方法&ndash;&gt;-->
+    <!--<script type="text/javascript">-->
+        <!--/*个人信息*/-->
+        <!--function myselfinfo() {-->
+            <!--layer.open({-->
+                <!--type: 1,-->
+                <!--area: ['300px', '200px'],-->
+                <!--fix: false, //不固定-->
+                <!--maxmin: true,-->
+                <!--shade: 0.4,-->
+                <!--title: '查看信息',-->
+                <!--content: '<div>管理员信息</div>'-->
+            <!--});-->
+        <!--}-->
+
+        <!--/*资讯-添加*/-->
+        <!--function article_add(title, url) {-->
+            <!--var index = layer.open({-->
+                <!--type: 2,-->
+                <!--title: title,-->
+                <!--content: url-->
+            <!--});-->
+            <!--layer.full(index);-->
+        <!--}-->
+
+        <!--/*图片-添加*/-->
+        <!--function picture_add(title, url) {-->
+            <!--var index = layer.open({-->
+                <!--type: 2,-->
+                <!--title: title,-->
+                <!--content: url-->
+            <!--});-->
+            <!--layer.full(index);-->
+        <!--}-->
+
+        <!--/*产品-添加*/-->
+        <!--function product_add(title, url) {-->
+            <!--var index = layer.open({-->
+                <!--type: 2,-->
+                <!--title: title,-->
+                <!--content: url-->
+            <!--});-->
+            <!--layer.full(index);-->
+        <!--}-->
+
+        <!--/*用户-添加*/-->
+        <!--function member_add(title, url, w, h) {-->
+            <!--layer_show(title, url, w, h);-->
+        <!--}-->
+
+        <!--//处理表格数据，-->
+        <!--//            $('.table-sort').dataTable({-->
+        <!--//                "aaSorting": [[2, "desc"]],//默认第几个排序-->
+        <!--//                "bStateSave": true,//状态保存-->
+        <!--//                "aoColumnDefs": [-->
+        <!--//                    //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示-->
+        <!--//                    {"orderable": false, "aTargets": [0, 4]}// 制定列不参与排序-->
+        <!--//                ]-->
+        <!--//            });-->
+
+
+        <!--&lt;!&ndash;请在下方写此页面业务相关的脚本&ndash;&gt;-->
+
+
+        <!--/*系统-栏目-添加*/-->
+        <!--function add_info(title, url, w, h) {-->
+            <!--layer_show(title, url, w, h);-->
+        <!--}-->
+
+        <!--/*系统-栏目-编辑*/-->
+        <!--function edit_info(title, url, id, w, h) {-->
+            <!--layer_show(title, url, w, h);-->
+        <!--}-->
+
+        <!--/*系统-栏目-删除*/-->
+        <!--function del_info(obj, id, url) {-->
+            <!--layer.confirm('确认要删除吗？', function (index) {-->
+                <!--$.ajax({-->
+                    <!--type: 'POST',-->
+                    <!--url: url,-->
+                    <!--data: {'id': id},-->
+                    <!--dataType: 'json',-->
+                    <!--success: function (data) {-->
+                        <!--//  alert(data['success']);-->
+                        <!--if (data) {-->
+                            <!--$(obj).parents("tr").remove();-->
+                            <!--layer.msg('已删除!', {icon: 1, time: 1000});-->
+                        <!--}-->
+
+                    <!--},-->
+                    <!--error: function (data) {-->
+                        <!--if (!data) {-->
+                            <!--console.log(data.msg);-->
+                        <!--}-->
+                    <!--},-->
+                <!--});-->
+            <!--});-->
+        <!--}-->
+    <!--</script>-->
+
