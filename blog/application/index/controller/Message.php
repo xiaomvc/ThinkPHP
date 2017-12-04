@@ -10,14 +10,15 @@ class Message extends Base
      */
     function saying()
     {
-        //如果文件不存在，就读取渲染后的内容到文件中
-        $file = "saying.html";
-        if (!file_exists($file)) {
-            //发布评论
+		 //发布评论
             if ($_POST) {
                 //发表评论
                 return $this->setMessage($this->request->controller());
             }
+        //如果文件不存在，就读取渲染后的内容到文件中
+        $file = "saying.html";
+        if (!file_exists($file)) {
+           
             $user = $this->getUserInfo();
 
             //获取留言表内容
@@ -32,6 +33,6 @@ class Message extends Base
             $data = $this->fetch('', ['user' => $user, 'message' => $data,"replyUrl"=>$replyUrl]);
             $result = $this->setHtml($file, $data);
         }
-        $this->header($file);
+        $this->header($file);exit;
     }
 }
