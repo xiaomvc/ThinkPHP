@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="__STATIC__/admin/css/add.css" rel="stylesheet">
+    <!--//jQuery-->
+    <script type="text/javascript" src="__STATIC__/common/js/jquery-3.2.1.min.js"></script>
+    <!--//layUI-->
+    {include file='public/layui'/}
+
+    <script type="text/javascript" src="__STATIC__/common/js/check.js"></script>
+
+    <script type="text/javascript" src="__STATIC__/admin/js/edit.js"></script>
+    <title>修改图书</title>
+</head>
+<body>
+
+<form method="post" action="/admin/share/edit">
+    <p class="title"> 修改图书分享：</p>
+    <div class="row">
+        <label><span class="c-red">*</span>书的标题：</label>
+        <div>
+            <input type="text" placeholder="书的标题" name="title" value="{$book.title}">
+        </div>
+    </div>
+
+    <div class="row">
+        <label><span class="c-red">*</span>封面图：</label>
+        <div>
+            <img id="imgShow" width="150" height="150" src="{$book.logo}"/>
+            <button type="button" class="layui-btn logo"><i class="layui-icon"></i>上传图片</button>
+            <input type="hidden" value="{$book.logo}" name="logo">
+        </div>
+    </div>
+    <div class="row">
+        <label><span class="c-red">*</span>图书地址：</label>
+        <div>
+            <input type="url" placeholder="图书详细地址（URL地址）" name="url" value="{$book.url}" />
+        </div>
+    </div>
+    <div class="row">
+        <label><span class="c-red">*</span>发布时间：</label>
+        <div>
+            <input type="text" class="layui-input time" placeholder="发布时间" name="time" value="{$book.produce_time|date='Y-m-d',###}">
+        </div>
+    </div>
+    <div class="row edit">
+        <label><span class="c-red">*</span>详细介绍：</label>
+        <div>
+            <textarea class="layui-textarea" id="introduce" style="display: none" name="introduce" placeholder="详细介绍">{$book.introduce}
+            </textarea>
+        </div>
+    </div>
+    <div>
+        <input type="hidden"  value="{$book.id}" name="id"/>
+    </div>
+    <div>
+        <input type="submit"  class="tijiao" value="修改"/>
+    </div>
+    <script type="text/javascript" src="__STATIC__/common/js/layui.js"></script>
+</form>
+</body>
+</html>

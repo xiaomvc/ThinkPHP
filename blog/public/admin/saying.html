@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+    <!--//定义编码格式-->
+    <!--header("Content-type:text/html;charset=utf-8;");-->
+    <meta charset="utf8"/>
+    <title>书客，提供24小时免费阅读的原创网站</title>
+    <meta name="keywords" content="24小时书店，免费阅读"/>
+    <meta name="description" content="书客，提供24小时免费阅读的原创网站。"/>
+    <link href="/static/index/css/base.css" rel="stylesheet">
+    <link href="/static/index/css/saying.css" rel="stylesheet">
+    <!--layui文件-->
+    <!--//jQuery-->
+<script type="text/javascript" src="/static/common/js/jquery-3.2.1.min.js"></script>
+<!--//layUI-->
+<link href="/static/layui/css/layui.css" rel="stylesheet">
+<script type="text/javascript" src="/static/layui/layui.js"></script>
+<!--<script type="text/javascript" src="/static/common/js/layui.js"></script>-->
+    <!--//公共的脚本文件-->
+    <script type="text/javascript" src="/static/common/js/base.js"></script>
+    <!--//分页的样式-->
+    <link rel="stylesheet" href="/static/common/css/paginate.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="/static/index/js/modernizr.js"></script>
+    <![endif]-->
+    <script src="/static/index/js/scrollReveal.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="logo" data-scroll-reveal="enter right over 1s" style="font:italic bolder 38px Verdana;">书客</div>
+    <nav class="topnav" data-scroll-reveal="enter bottom over 1s after 1s"><a href="/admin/index/index.html"><span>首页</span><span
+            class="en">Home</span></a><a href="/admin/about/me.html"><span>关于我</span><span class="en">About</span></a><a
+            href="/admin/share/books.html"><span>图书分享</span><span class="en">Share</span></a><a
+            href="/admin/message/saying.html"><span>留言</span><span class="en">Saying</span></a></nav>
+</header>
+<!--弹出层-->
+<script type="text/javascript" src="/static/common/js/alert.js"></script>
+
+<article>
+    <div class="container">
+
+        <h2 class="ctitle"><b>留言板</b> <span>勿忘曾经的那个自己 &nbsp&nbsp铭记想成为的那个自己。</span></h2>
+        <div class="gbook">
+            <div class="about">
+                <div id="fountainG">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="about_girl"><span><a href="/"><img src="/upload/qwe.jpg"></a></span>
+                    <p>你只看到我的技术，却没看到我的通宵。 你有你的需求，我有我的选择。 你嘲笑我技术宅孤独一生，我可怜你只能呆呆站在墙里。 你可以轻视昼夜不分的Coding，但我会证明它至少可以买到xx票。
+                        技术宅的路上少不了苦逼和孤独,又怎样，哪怕成不了大神，也要码的漂亮。我是IT男，我为自己代言！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </aside>
+
+    <!--弹出层-->
+<script type="text/javascript" src="/static/common/js/alert.js"></script>
+
+<link rel="stylesheet" href="/static/common/css/userLogin.css"/>
+<script type="text/javascript" src="/static/common/js/userLogin.js"></script>
+<!--验证文本框信息-->
+<script type="text/javascript" src="/static/common/js/check.js"></script>
+
+
+<!--回复栏-->
+<div class="gbko">
+
+        <p class="userLogo"><span><a href="javascript:;"><img src="/upload/admin.jpg"></a></span></p>
+    <span style='font-size: 18px;padding: 5px;color: #1E9FFF;'><a href="javascript:;">admin</a></span>
+    <span style='font-size: 18px;color: #1E9FFF;'><a href="javascript:;" onclick="exitLogin()">退出登录</a></span>
+    
+    <textarea class="layui-textarea" id="introduce" style="display: none" name="saying" placeholder="">
+留个言呗</textarea>
+
+        <input class="userid" type="hidden" value="1" name="userid"/>
+        <input type="hidden" name="reply" value="/admin/share/more"/>
+    <input type="hidden" name="note_id" value="0"/>
+    <p style="padding: 10px; font-size: 16px;"><a href="javascript:;" class="reply">发表评论</a></p>
+    <!--登录页面-->
+    <form action="/admin/user/login" method="post">
+
+        <div class="right" id="login" style="display: none;">
+            <div class="clearAlert"><a href="javascrpt:;" onclick="EV_closeAlert()"><img
+                    src="/static/index/images/error.jpg"/></a></div>
+            <div class="righttop"> 登录&nbsp;</div>
+            <div id="log-form" class="rightmid">
+                <div class="log-input-container">
+                    <div class="clear" style="font-size:0px;"></div>
+                    <div class="log-line log-line-hover" id="rowCacct">
+                        <input id="log-cacct" type="text" autocomplete="off" maxlength="34" class="log-input input2"
+                               name="login" placeholder="账号">
+                        <div class="logIco logIcoCacct">&nbsp;</div>
+                    </div>
+                    <div class="log-line" id="rowPwd">
+                        <input id="log-pwd" type="password" autocomplete="new-password" maxlength="20"
+                               class="log-input input2" name="pwd" placeholder="密码">
+                        <div class="logIco logIcoPwd">&nbsp;</div>
+                    </div>
+                    <div id="log-valid-line" class="log-line">
+                        <input id="log-valid" type="text" class="log-input input2"
+                               style="width:116px; padding-left:12px;"
+                               name="verify" placeholder="验证码">
+                        <img id="log-valid-img" onclick="verifyImg(this)" class="verify" title="看不清？点击换一张"
+                             src="/admin/user/verifyimg.html">
+                    </div>
+                </div>
+                <div id="login-button" class="loginBtn">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</div>
+                <div class="clear"></div>
+
+                <div class="login_otherAcct">
+                    <span class="login_other">其他帐号登录</span>
+                    <a class="login_WeChatI" href="javascript:;" onclick="bindWeChat();" title="微信登录"></a>
+                    <a class="login_QQI" href="javascript:;" onclick="bindQQAccount();" title="QQ登录"></a>
+
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+    <!--评论-->
+        <div class="message">
+        <!--帖子的回复-->
+        <div class="user">
+            <span><a href="javascript:;"><img src="/upload/admin.jpg"></a></span>
+            <strong>admin</strong>
+            <span class="createTime">2017-10-24 13:10:03</span>
+            <p class="mtext"><p><span>你只看到我的技术，却没看到我的通宵。 你有你的需求，我有我的选择。 你嘲笑我技术宅孤独一生，我可怜你只能呆呆站在墙里。 你可以轻视昼夜不分的Coding，但我会证明它至少可以买到xx票。 技术宅的路上少不了苦逼和孤独,又怎样，哪怕成不了大神，也要码的漂亮。我是IT男，我为自己代言！<img src="http://localhost:81/static/layui/images/face/0.gif" alt="[微笑]"></span></p></p>
+        </div>
+                <!--楼中楼，帖子中的回复的回复-->
+                <div class="otherUser">
+            <strong>li </strong>
+            <p> 勿忘曾经的那个自己   铭记想成为的那个自己</p>
+        </div>
+                <input type="hidden" name="replyid" value="20"/>
+        <p class="huifu" onclick="huifu(this)">回复</p>
+    </div>
+        <div class="message">
+        <!--帖子的回复-->
+        <div class="user">
+            <span><a href="javascript:;"><img src="/upload/li.jpg"></a></span>
+            <strong>li</strong>
+            <span class="createTime">2017-10-24 13:27:56</span>
+            <p class="mtext"><p><a href="http://www.juzimi.com/ju/212844" title="查看本句" class="xlistju">谁道飘零不可怜，旧游时节好花天。断肠人去自经年。一片晕红才著雨，几丝柔绿乍和烟。倩魂销尽夕阳前。<img src="http://localhost:81/static/layui/images/face/68.gif" alt="[钟]"></a></p></p>
+        </div>
+                <input type="hidden" name="replyid" value="22"/>
+        <p class="huifu" onclick="huifu(this)">回复</p>
+    </div>
+        <div class="message">
+        <!--帖子的回复-->
+        <div class="user">
+            <span><a href="javascript:;"><img src="/upload/li.jpg"></a></span>
+            <strong>li</strong>
+            <span class="createTime">2017-10-25 00:50:56</span>
+            <p class="mtext">叽叽叽叽就</p>
+        </div>
+                <!--楼中楼，帖子中的回复的回复-->
+                <div class="otherUser">
+            <strong>li </strong>
+            <p> 1212</p>
+        </div>
+                <input type="hidden" name="replyid" value="26"/>
+        <p class="huifu" onclick="huifu(this)">回复</p>
+    </div>
+        <div class="message">
+        <!--帖子的回复-->
+        <div class="user">
+            <span><a href="javascript:;"><img src="http://q.qlogo.cn/qqapp/101429982/22A720CA1C9AC45724EC3DA167CE1DB3/100"></a></span>
+            <strong>士力架</strong>
+            <span class="createTime">2017-10-31 16:52:40</span>
+            <p class="mtext">留个言呗</p>
+        </div>
+                <input type="hidden" name="replyid" value="35"/>
+        <p class="huifu" onclick="huifu(this)">回复</p>
+    </div>
+    </div>
+
+</div>
+</article>
+
+<footer> Design by DanceSmile 蜀ICP备11002373号-1</footer>
+<script>
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+        (function () {
+            window.scrollReveal = new scrollReveal({reset: true});
+        })();
+    }
+    ;
+</script>
+<script type="text/javascript" src="/static/common/js/layui.js"></script>
+</body></html>

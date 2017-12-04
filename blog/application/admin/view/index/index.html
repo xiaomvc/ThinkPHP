@@ -1,0 +1,55 @@
+{include file="public/header"}
+
+<article>
+    <div class="container">
+        <div class="blog" data-scroll-reveal="enter top">
+            <div data-scroll-reveal="enter bottom over 1s a<dir 1s" style="text-indent: 2em;font-size: 18px;"><span onclick="EV_closeAlert()">推荐阅读</span></div>
+            {volist name="sortBooks" id="vo" length="3"}
+
+            <figure>
+                <ul>
+                    <a href="{$vo.url}" target="_blank"><img src="{$vo.logo}"><span>阅读，让自己更美</span></a>
+                </ul>
+
+                <p><a href="{$vo.url}" target="_blank">{$vo.title}</a></p>
+                <figcaption>{:cutstr_html($vo.introduce,70)}
+                    <a href="{:url('admin/share/more',['id'=>$vo.id])}" target="_blank"
+                       class="readmore">阅读全文&gt;&gt;</a>
+                    <a href="{:url('admin/share/edit',['id'=>$vo.id])}" target="_blank" class="edit">编辑&gt;></a>
+                    <a href="javascript:;" class="deal"
+                       onclick="deal({$vo['id']},'/admin/share/deal',this.parentNode.parentNode)">删除>></a>
+                </figcaption>
+
+            </figure>
+
+            {/volist}
+        </div>
+
+
+        <ul class="cbp_tmtimeline">
+            {volist name="books" id="vo" length="10"}
+
+            <li>
+                <time class="cbp_tmtime"><span>{$vo.produce_time|date='m-d',###}</span> <span>{$vo['produce_time']|date='Y',###}</span>
+                </time>
+                <div class="cbp_tmicon"></div>
+                <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s">
+                    <h2>{$vo.title}</h2>
+                    <p>
+                        <span class="blogpic"><a href="/"><img src="{$vo.logo}"></a></span>
+                        {:cutstr_html($vo.introduce,140)}
+                        <a href="{:url('admin/share/edit',['id'=>$vo.id])}" target="_blank" class="editList">编辑&gt;></a>
+                        <a href="javascript:;" class="dealList"
+                           onclick="deal({$vo['id']},'/admin/share/deal',this.parentNode.parentNode.parentNode)">删除>></a>
+                    </p>
+
+                    <a href="{:url('admin/share/more',['id'=>$vo.id])}" target="_blank"
+                       class="readmore">阅读全文&gt;&gt;</a>
+                </div>
+            </li>
+
+            {/volist}
+        </ul>
+    </div>
+</article>
+{include file="public/footer" /}

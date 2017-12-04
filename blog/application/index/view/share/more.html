@@ -1,0 +1,29 @@
+{include file="public/header"/}
+
+<article>
+    <div class="container">
+        <div class="about left">
+            <ul>
+                <h4 class="atitle"><span>{$book.produce_time|date='Y-m-d',###}</span><a href="{$book.url}"
+                                                                                        target="_blank"><< {$book.title}
+                    >></a></h4>
+                <p class="newsnav">您现在的位置是:<a href="/admin/index/index">首页</a>&nbsp;&gt;图书分享&nbsp;&gt;&nbsp;图书浏览 </p>
+                <p>&nbsp;<img src="{$book.logo}" alt="{$book.title}" width="600" height=""></p>
+                <p>{$book.introduce|html_entity_decode}</p>
+
+            </ul>
+
+            <h2>相关图书</h2>
+            {volist name="sort" id="vo"}
+
+            <p><a href="{:url('more',['id'=>$vo.id])}">{$vo.title}</a></p>
+
+            {/volist}
+
+        </div>
+
+        <!--登录/评论 页面-->
+        {include file="public/login" /}
+    </div>
+</article>
+{include file="public/footer" /}
