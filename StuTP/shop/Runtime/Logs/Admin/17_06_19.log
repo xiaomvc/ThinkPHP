@@ -1,0 +1,27 @@
+[ 2017-06-19T00:21:55+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/showlist
+ERR: SQLSTATE[HY000] [2006] MySQL server has gone away
+
+[ 2017-06-19T00:21:55+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/showlist
+ERR: Syntax Error in template "E:/phpwamp/wwwroot/StuTP/shop/Admin/View\Goods\showlist.html"  on line 12 ".tr_color{background-color: #9F88FF}"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-06-19T00:21:55+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/showlist
+ERR: Syntax Error in template "E:/phpwamp/wwwroot/StuTP/shop/Admin/View\Goods\showlist.html"  on line 12 ".tr_color{background-color: #9F88FF}"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-06-19T00:21:55+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/showlist
+ERR: Syntax Error in template "E:/phpwamp/wwwroot/StuTP/shop/Admin/View\Goods\showlist.html"  on line 12 ".tr_color{background-color: #9F88FF}"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-06-19T00:21:56+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/showlist
+ERR: Syntax Error in template "E:/phpwamp/wwwroot/StuTP/shop/Admin/View\Goods\showlist.html"  on line 12 ".tr_color{background-color: #9F88FF}"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-06-19T00:24:27+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/showlist
+ERR: SQLSTATE[HY000] [2006] MySQL server has gone away
+
+[ 2017-06-19T00:25:29+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/showlist
+ERR: SQLSTATE[HY000] [2006] MySQL server has gone away
+
+[ 2017-06-19T00:26:51+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/showlist
+ERR: SQLSTATE[HY000] [2006] MySQL server has gone away
+
+[ 2017-06-19T00:53:05+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/showlist?s_product_mark=1
+ERR: Syntax Error in template "E:/phpwamp/wwwroot/StuTP/shop/Admin/View\Goods\showlist.html"  on line 48 "&lt;tr id=&quot;{product.$k+1}&quot;&gt;"  - Unexpected ".", expected one of: "}" , " "
+

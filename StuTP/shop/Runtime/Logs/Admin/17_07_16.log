@@ -1,0 +1,48 @@
+[ 2017-07-16T15:10:13+08:00 ] ::1 /stuTP/shop/index.php/admin/manager/login
+ERR: 模板不存在:E:/phpwamp/wwwroot/StuTP/shop/Admin/View/Manager/index.html
+
+[ 2017-07-16T15:23:46+08:00 ] ::1 /stuTP/shop/index.php/admin/manager/login
+ERR: 模板不存在:E:/phpwamp/wwwroot/StuTP/shop/Admin/View/@Index/index.html
+
+[ 2017-07-16T16:14:57+08:00 ] ::1 /stuTP/shop/index.php/Admin/Manager/left.html
+ERR: 非法操作:left
+
+[ 2017-07-16T16:14:57+08:00 ] ::1 /stuTP/shop/index.php/Admin/Manager/head.html
+ERR: 非法操作:head
+
+[ 2017-07-16T16:14:57+08:00 ] ::1 /stuTP/shop/index.php/Admin/Manager/right.html
+ERR: 非法操作:right
+
+[ 2017-07-16T16:32:34+08:00 ] ::1 /stuTP/shop/index.php/admin/index/head
+ERR: Syntax Error in template "E:/phpwamp/wwwroot/StuTP/shop/Admin/View\Index\head.html"  on line 14 "align=middle&gt;当前用户：{smarty.const.$username} &amp;nbsp;&amp;nbsp; &lt;a style=&quot;color: #fff&quot;"  - Unexpected ".", expected one of: "}" , " "
+
+[ 2017-07-16T16:33:31+08:00 ] ::1 /stuTP/shop/index.php/admin/index/head
+ERR: Syntax Error in template "E:/phpwamp/wwwroot/StuTP/shop/Admin/View\Index\head.html"  on line 14 "align=middle&gt;当前用户：{smarty.$username} &amp;nbsp;&amp;nbsp; &lt;a style=&quot;color: #fff&quot;"  - Unexpected ".", expected one of: "}" , " "
+
+[ 2017-07-16T17:00:25+08:00 ] ::1 /stuTP/shop/index.php/Admin/Index/goods/showlist
+ERR: 非法操作:goods
+
+[ 2017-07-16T17:01:19+08:00 ] ::1 /stuTP/shop/index.php/Admin/Index/goods/showlist
+ERR: 非法操作:goods
+
+[ 2017-07-16T17:02:12+08:00 ] ::1 /stuTP/shop/index.php/Admin/Index/goods/showlist
+ERR: 非法操作:goods
+
+[ 2017-07-16T17:04:32+08:00 ] ::1 /stutp/shop/index.php/Admin/goods/index.html
+ERR: 非法操作:index
+
+[ 2017-07-16T17:04:37+08:00 ] ::1 /stutp/shop/index.php/admin/r/login
+ERR: 无法加载控制器:R
+
+[ 2017-07-16T17:05:14+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/update
+ERR: 非法操作:update
+
+[ 2017-07-16T17:09:34+08:00 ] ::1 /stutp/shop/index.php/admin/goods/updatelsit
+ERR: 非法操作:updatelsit
+
+[ 2017-07-16T23:57:46+08:00 ] ::1 /stuTP/shop/index.php/admin/index/index.php
+ERR: 非法操作:index.php
+
+[ 2017-07-16T23:59:23+08:00 ] ::1 /stuTP/shop/index.php/admin/index/index.php
+ERR: 非法操作:index.php
+

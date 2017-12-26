@@ -1,0 +1,27 @@
+[ 2017-07-24T16:08:42+08:00 ] 127.0.0.1 /index.php/back/goods/ueditor.config.js
+ERR: 非法操作:ueditor.config.js
+
+[ 2017-07-24T16:08:42+08:00 ] 127.0.0.1 /index.php/back/goods/ueditor.all.min.js
+ERR: 非法操作:ueditor.all.min.js
+
+[ 2017-07-24T16:08:42+08:00 ] 127.0.0.1 /index.php/back/goods/lang/zh-cn/zh-cn.js
+ERR: 非法操作:lang
+
+[ 2017-07-24T16:08:43+08:00 ] 127.0.0.1 /index.php/back/goods/ueditor.all.min.js
+ERR: 非法操作:ueditor.all.min.js
+
+[ 2017-07-24T16:08:43+08:00 ] 127.0.0.1 /index.php/back/goods/ueditor.config.js
+ERR: 非法操作:ueditor.config.js
+
+[ 2017-07-24T16:08:43+08:00 ] 127.0.0.1 /index.php/back/goods/lang/zh-cn/zh-cn.js
+ERR: 非法操作:lang
+
+[ 2017-07-24T16:08:44+08:00 ] 127.0.0.1 /index.php/back/goods/ueditor.all.min.js
+ERR: 非法操作:ueditor.all.min.js
+
+[ 2017-07-24T16:08:44+08:00 ] 127.0.0.1 /index.php/back/goods/lang/zh-cn/zh-cn.js
+ERR: 非法操作:lang
+
+[ 2017-07-24T16:29:03+08:00 ] 127.0.0.1 /index.php/back/goods/admin.php?c=goods&a=add
+ERR: 非法操作:admin.php
+

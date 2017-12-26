@@ -1,0 +1,7 @@
+[ 2017-07-03T00:13:07+08:00 ] ::1 /stuTP/shop/index.php/admin/manager/login
+ERR: Think\Controller:directory方法不存在！
+
+[ 2017-07-03T00:24:19+08:00 ] ::1 /stuTP/shop/index.php/admin/manager/login
+ERR: 1054:Unknown column 'root' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sw_manager` WHERE (  root ) AND (  123456 ) LIMIT 1  
+

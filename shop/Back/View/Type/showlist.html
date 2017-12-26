@@ -1,0 +1,83 @@
+<div style="font-size: 13px; margin: 10px 5px;">
+    <table class="table_a" border="1" width="100%">
+        <tbody>
+
+        <tr>
+            <td>类型名称 :
+                <select name="type_id" onchange="show_attr()">
+                    <option value="0">..请选择类型</option>
+                    <foreach name="type" item="v">
+                        <option value="{$v.type_id}">{$v.type_name}</option>
+
+                    </foreach>
+                </select>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <script type="text/javascript">
+
+
+
+
+        function show_attr() {
+            //获取select中name属性为type_id 的 select 标签
+            //获取select中选中的option属性中的value值
+            var type_id = $("select[name='type_id'] option:selected").val();
+            //判断选中的是否大于0（因为第一个为提示信息：请选择...）
+            if (type_id <= 0) {
+                //删除第一个tr后面的元素，并返回，不继续执行
+                $("table tr:not(:first)").remove();
+                return;
+            }
+            ;
+            //通过get的方式，向后台提交数据
+            $.get('showType', {'type_id': type_id}, function (msg) {
+                var str = "";
+                // 转换格式
+                var data = $.parseJSON(msg);
+                $.each(data, function (k, v) {
+                    if (v.auth_level == 0) {
+                        str = str + "<tr><td>" + v.auth_name + " : <input name='type_name'/></td></tr>";
+                    } else if (v.auth_level == 1) {
+                        //$(this).parent().parent().parent()
+                        //获取它的tr父级元素
+                        str = str + "<tr><td><em><span onclick='add_item($(this).parent().parent().parent())'>[+]</span></em>" + v.auth_name + " : <input name='type_name'/></td></tr>";
+                    }
+                })
+                //获取table中不是第一个tr元素，然后删除（删除第一个tr后，的元素内容呢）
+                $("table tr:not(:first)").remove();
+                //在table中添加新的元素
+                $("table").append(str);
+            });
+
+            //这是原型写法
+            /* $.ajax({
+             url: "__CONTROLLER__/showType",
+             data: {'type_id': type_id},
+             dataType: 'json',
+             type: 'get',
+             success: function ($msg) {}
+             });*/
+        };
+
+        //add_item($(this).parent().parent().parent())
+        //传递它的tr父级元素
+        function add_item(obj) {
+            //obj.clone()复制一份
+            var fu_obj = obj.clone();
+            //把复制品中的span内容删除
+            fu_obj.find("span").remove();
+            //在复制品中的em元素，添加新的span元素内容
+            fu_obj.find("em").append("<span onclick='$(this).parent().parent().parent().remove()'>[-]</span>")
+            //在原来的元素（tr），后面添加新的元素（新的复制品）
+            obj.after(fu_obj);
+        }
+
+    </script>
+</div>
+<body>
+    <!--导入的文件为部分div的html代码-->
+    <include file="Pub/navigator" />
+</body>

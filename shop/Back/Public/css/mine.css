@@ -1,0 +1,88 @@
+body{
+    font-size: 13px;
+}
+.div_search{
+    font-size: 13px;
+    margin: 10px 5px;
+    padding-left: 10px;
+    line-height: 30px;
+    height:30px;
+    background-color: #E8F2FC;
+    border: solid #1c94c4 1px;
+    overflow: hidden
+}
+.table_a{
+    border-collapse:collapse;
+    border: 1px solid #E3E6EB
+}
+.table_a td{
+    line-height: 25px;
+    padding-left: 8px;
+    /*text-align: left;*/
+}
+.div_head{
+    font-size: 13px;
+    margin: 10px 5px;
+    padding-left: 10px;
+    line-height: 25px;
+    height:25px;
+    background-color: #E8F2FC;
+    border-bottom: solid #1c94c4 1px
+}
+
+
+#tabbar-div {
+    background: none repeat scroll 0 0 #80BDCB;
+    height: 27px;
+    padding-left: 10px;
+
+    padding-top: 1px;
+}
+#tabbar-div p {
+    margin: 2px 0 0;
+}
+.tab-front {
+    background: none repeat 0 0 #BBDDE5;
+    border-right: 2px solid #278296;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 4px 15px 4px 13px;
+}
+.tab-back {
+    border-right: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+    line-height: 20px;
+    padding: 4px 15px 4px 18px;
+}
+
+
+
+/*商品添加的样式*/
+
+#tabbar-div {
+    background: none repeat scroll 0 0 #80BDCB;
+    height: 27px;
+    padding-left: 10px;
+
+    padding-top: 1px;
+}
+#tabbar-div p {
+    margin: 2px 0 0;
+}
+.tab-front {
+    background: none repeat 0 0 #BBDDE5;
+    border-right: 2px solid #278296;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 4px 15px 4px 13px;
+}
+.tab-back {
+    border-right: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+    line-height: 20px;
+    padding: 4px 15px 4px 18px;
+}

@@ -1,0 +1,55 @@
+[ 2017-07-24T15:00:12+08:00 ] 127.0.0.1 /admin/goods/date
+ERR: 非法操作:date
+
+[ 2017-07-24T15:00:20+08:00 ] 127.0.0.1 /admin/goods/update
+ERR: 非法操作:update
+
+[ 2017-07-24T15:00:25+08:00 ] 127.0.0.1 /admin/goods/updata
+ERR: 非法操作:updata
+
+[ 2017-07-24T15:00:29+08:00 ] 127.0.0.1 /admin/goods/updata
+ERR: 非法操作:updata
+
+[ 2017-07-24T15:00:44+08:00 ] 127.0.0.1 /admin/goods/ueditor.all.min.js
+ERR: 非法操作:ueditor.all.min.js
+
+[ 2017-07-24T15:00:44+08:00 ] 127.0.0.1 /admin/goods/ueditor.config.js
+ERR: 非法操作:ueditor.config.js
+
+[ 2017-07-24T15:00:44+08:00 ] 127.0.0.1 /admin/goods/ueditor.all.min.js
+ERR: 非法操作:ueditor.all.min.js
+
+[ 2017-07-24T15:01:21+08:00 ] 127.0.0.1 /admin/goods/ueditor.all.min.js
+ERR: 非法操作:ueditor.all.min.js
+
+[ 2017-07-24T15:01:21+08:00 ] 127.0.0.1 /admin/goods/ueditor.config.js
+ERR: 非法操作:ueditor.config.js
+
+[ 2017-07-24T15:01:21+08:00 ] 127.0.0.1 /admin/goods/ueditor.all.min.js
+ERR: 非法操作:ueditor.all.min.js
+
+[ 2017-07-24T15:01:57+08:00 ] 127.0.0.1 /admin/goods/ueditor.all.min.js
+ERR: 非法操作:ueditor.all.min.js
+
+[ 2017-07-24T15:01:57+08:00 ] 127.0.0.1 /admin/goods/ueditor.config.js
+ERR: 非法操作:ueditor.config.js
+
+[ 2017-07-24T15:01:57+08:00 ] 127.0.0.1 /admin/goods/ueditor.all.min.js
+ERR: 非法操作:ueditor.all.min.js
+
+[ 2017-07-24T15:01:58+08:00 ] 127.0.0.1 /admin/goods/ueditor.config.js
+ERR: 非法操作:ueditor.config.js
+
+[ 2017-07-24T15:01:58+08:00 ] 127.0.0.1 /admin/goods/ueditor.all.min.js
+ERR: 非法操作:ueditor.all.min.js
+
+[ 2017-07-24T17:34:28+08:00 ] 127.0.0.1 /admin/goods/showlist
+ERR: Syntax Error in template "E:/web/StuTP/shop/Admin/View\Goods\showlist.html"  on line 60 "&lt;td&gt;{$v.goods_create_time | date_format:'%Y-%m-%d %T'}&lt;/td&gt;&lt;!--对 Unix 时间戳进行格式化--&gt;"  - Unexpected "|"
+
+[ 2017-07-24T17:35:05+08:00 ] 127.0.0.1 /admin/goods/showlist
+ERR: Syntax Error in template "E:/web/StuTP/shop/Admin/View\Goods\showlist.html"  on line 60 "&lt;td&gt;{$v.goods_create_time |date_format:'%Y-%m-%d %T'}&lt;/td&gt;&lt;!--对 Unix 时间戳进行格式化--&gt;"  - Unexpected "|"
+
+[ 2017-07-24T18:08:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/addlist
+ERR: 1264:Out of range value for column 'goods_price' at row 1
+ [ SQL语句 ] : INSERT INTO `sw_goods` (`goods_name`,`goods_number`,`goods_weight`,`goods_price`,`goods_introduce`,`goods_create_time`,`goods_big_img`,`goods_small_img`) VALUES ('抠脚大叔','1','50','999999999','我有<span style=\"font-size:24px;color:rgb(0,112,192);\">样式</span>','1500890919','2017-07-24/5975c72712557.jpg','2017-07-24/_small_5975c72712557.jpg')
+

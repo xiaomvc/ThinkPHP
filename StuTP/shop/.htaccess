@@ -1,0 +1,38 @@
+
+
+
+#静态化
+
+#1 >>>更改后缀xml-html
+
+#开启重写开关
+RewriteEngine on
+
+#访问showlist.ppp实际执行 showlist.html
+RewriteRule  ^(.*)showlist\.hhh$  $1showlist\.html
+RewriteRule ^aaa.bbb$ asd.php
+
+#2 >>>隐藏入口文件
+# 访问的不是一个文件file
+RewriteCond %{REQUEST_FILENAME} !-f
+# 访问的不是一个目录directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#(.*)代表请求的时候后续给传递的内容
+# $1代表前边小阔内容，这是正则表达式中模式单元重复使用的用法
+RewriteRule ^(.*)$  index\.php?/$1
+
+#3 >>>链接地址带参数
+#访问：/stuTP/shop/index.php/Admin/goods/updatelist/13_update
+#真实指向地址： /stuTP/shop/index.php/Admin/goods/updatelist/goods_id/13
+
+RewriteRule ^(.*)/(\d+)_update$  $1/goods_id/$2
+
+#4 >>>域名跳转（我这里没有两个地址，没法测试）
+#访问：http://web.520.com
+#真实指向地址：http://web.521.com
+
+#临时注释
+#RewriteCond %{HTTP_HOST} ^web\.520\.com
+
+#RewriteRule ^(.*)  http://web\.521\.com/$1

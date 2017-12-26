@@ -1,0 +1,24 @@
+<div style="font-size: 13px; margin: 10px 5px;">
+    <table class="table_a" border="1" width="100%">
+        <tbody>
+        <tr style="font-weight: bold;">
+            <td>序号</td>
+            <td>角色名称</td>
+            <td>权限ID</td>
+            <td align="center" colspan="3">操作</td>
+        </tr>
+        <foreach name="showlist" item='show'>
+
+        <tr>
+            <td>{$show.role_id}</td>
+            <td>{$show.role_name}</td>
+            <td>{$show.role_auth_ids}</td>
+
+
+            <td><a href="{:U('Role/upRole',array('role_id'=>$show['role_id'] )) }">修改</a></td>
+            <td><a href="#">删除</a></td>
+        </tr>
+        </foreach>
+        </tbody>
+    </table>
+</div>

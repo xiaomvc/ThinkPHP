@@ -1,0 +1,6 @@
+[ 2017-06-24T00:26:41+08:00 ] ::1 /StuTP/shop/index.php/admin/user/validage
+ERR: 无法加载控制器:User
+
+[ 2017-06-24T00:27:03+08:00 ] ::1 /StuTP/shop/index.php/admin/user/register
+ERR: 无法加载控制器:User
+

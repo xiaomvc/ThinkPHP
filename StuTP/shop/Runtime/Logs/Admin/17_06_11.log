@@ -1,0 +1,63 @@
+[ 2017-06-11T18:41:07+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/__CONTROLLER__/head.html
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-06-11T18:41:07+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/__CONTROLLER__/left.html
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-06-11T18:41:07+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/__CONTROLLER__/right.html
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-06-11T19:18:20+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_CSS_URL;?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-06-11T19:18:20+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eheader_left.jpg
+ERR: 非法操作:
+
+[ 2017-06-11T19:18:20+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eheader_right.jpg
+ERR: 非法操作:
+
+[ 2017-06-11T19:18:20+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_IMG_URL;?%3Emenu_icon.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:18:20+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_CSS_URL;?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-06-11T19:18:20+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_CSS_URL;?%3Eadmin.css
+ERR: 非法操作:
+
+[ 2017-06-11T19:18:20+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eadmin_p.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:18:20+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eheader_bg.jpg
+ERR: 非法操作:
+
+[ 2017-06-11T19:18:20+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php
+ERR: 非法操作:
+
+[ 2017-06-11T19:18:20+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_IMG_URL;?%3Emenu_icon.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:18:20+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php
+ERR: 非法操作:
+
+[ 2017-06-11T19:20:37+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eheader_left.jpg
+ERR: 非法操作:
+
+[ 2017-06-11T19:20:37+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eheader_right.jpg
+ERR: 非法操作:
+
+[ 2017-06-11T19:20:37+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eheader_bg.jpg
+ERR: 非法操作:
+
+[ 2017-06-11T19:20:37+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php
+ERR: 非法操作:
+
+[ 2017-06-11T19:20:37+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_IMG_URL;?%3Emenu_icon.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:20:37+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eadmin_p.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:20:37+08:00 ] ::1 /StuTP/shop/index.php/Admin/Index/%3C?php
+ERR: 非法操作:
+

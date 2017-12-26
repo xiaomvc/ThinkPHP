@@ -1,0 +1,21 @@
+[ 2017-07-02T17:47:22+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/updatalist
+ERR: 非法操作:updatalist
+
+[ 2017-07-02T17:47:28+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/updatelist
+ERR: 参数错误或者未定义:goods_id
+
+[ 2017-07-02T17:48:26+08:00 ] ::1 /stuTP/shop/index.php/admin/goods/updatelist
+ERR: 参数错误或者未定义:goods_id
+
+[ 2017-07-02T17:52:42+08:00 ] ::1 /stuTP/shop/index.php/Admin/Goods/updatelist/goo/8
+ERR: 参数错误或者未定义:goods_id
+
+[ 2017-07-02T18:00:47+08:00 ] ::1 /stuTP/shop/index.php/Admin/Goods/updatelist/goo/8
+ERR: 参数错误或者未定义:goods_id
+
+[ 2017-07-02T23:54:57+08:00 ] ::1 /stuTP/shop/index.php/admin/manager/__CONTROLLER/VerifyImg
+ERR: 非法操作:__CONTROLLER
+
+[ 2017-07-02T23:55:00+08:00 ] ::1 /stuTP/shop/index.php/admin/manager/__CONTROLLER/VerifyImg
+ERR: 非法操作:__CONTROLLER
+

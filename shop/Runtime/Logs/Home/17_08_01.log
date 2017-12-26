@@ -1,0 +1,12 @@
+[ 2017-08-01T17:31:18+08:00 ] 127.0.0.1 /index.php/home/user/regist/
+ERR: Function name must be a string
+
+[ 2017-08-01T17:59:51+08:00 ] 127.0.0.1 /index.php/home/user/regist/
+ERR: Call to a member function Error() on boolean
+
+[ 2017-08-01T18:00:10+08:00 ] 127.0.0.1 /index.php/home/user/regist/
+ERR: Call to a member function GetError() on boolean
+
+[ 2017-08-01T18:40:29+08:00 ] 127.0.0.1 /index.php/home/user/regist/
+ERR: Invalid address: T_SMTP_FROM
+

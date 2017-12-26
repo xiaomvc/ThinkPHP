@@ -1,0 +1,95 @@
+[ 2017-07-26T19:37:11+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: Think\Model:json方法不存在！
+
+[ 2017-07-26T19:38:24+08:00 ] 127.0.0.1 /index.php/back/index/left.html
+ERR: Think\Model:json方法不存在！
+
+[ 2017-07-26T19:38:28+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: Think\Model:json方法不存在！
+
+[ 2017-07-26T19:39:11+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: Think\Model:json方法不存在！
+
+[ 2017-07-26T19:39:40+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1146:Table 'shop.__role__' doesn't exist
+ [ SQL语句 ] : SELECT r.role_auth_ids FROM sw_manager m INNER JOIN __role__ as r on m.mg_role_id=r.role_id  WHERE ( m.mg_id=1 ) LIMIT 1  
+
+[ 2017-07-26T19:40:05+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1146:Table 'shop.role' doesn't exist
+ [ SQL语句 ] : SELECT r.role_auth_ids FROM sw_manager m INNER JOIN role as r on m.mg_role_id=r.role_id  WHERE ( m.mg_id=1 ) LIMIT 1  
+
+[ 2017-07-26T19:40:27+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1146:Table 'shop.role' doesn't exist
+ [ SQL语句 ] : SELECT r.role_auth_ids FROM sw_manager m INNER JOIN role as r on m.mg_role_id=r.role_id  WHERE ( m.mg_id=1 ) LIMIT 1  
+
+[ 2017-07-26T19:57:52+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inArray )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_role` WHERE ( auth inArray ) 
+
+[ 2017-07-26T19:58:58+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inArray )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_role` WHERE ( auth_id inArray ) 
+
+[ 2017-07-26T19:59:33+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_role` WHERE ( auth_id in10,21 ) 
+
+[ 2017-07-26T19:59:48+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_role` WHERE ( auth_id in10,21 ) 
+
+[ 2017-07-26T19:59:50+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_role` WHERE ( auth_id in10,21 ) 
+
+[ 2017-07-26T19:59:59+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_role` WHERE ( auth_id in 10,21 ) 
+
+[ 2017-07-26T20:00:26+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_role` WHERE ( auth_id in 10,21 ) 
+
+[ 2017-07-26T20:00:28+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_role` WHERE ( auth_id in 10,21 ) 
+
+[ 2017-07-26T20:00:58+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_auth` WHERE ( auth_id in 10,21 ) 
+
+[ 2017-07-26T20:01:27+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_auth` WHERE ( auth_id in 10,21 ) 
+
+[ 2017-07-26T20:01:29+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_auth` WHERE ( auth_id in 10,21 ) 
+
+[ 2017-07-26T20:01:29+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_auth` WHERE ( auth_id in 10,21 ) 
+
+[ 2017-07-26T20:01:30+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_auth` WHERE ( auth_id in 10,21 ) 
+
+[ 2017-07-26T20:01:30+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_auth` WHERE ( auth_id in 10,21 ) 
+
+[ 2017-07-26T20:01:30+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_auth` WHERE ( auth_id in 10,21 ) 
+
+[ 2017-07-26T20:01:30+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_auth` WHERE ( auth_id in 10,21 ) 
+
+[ 2017-07-26T20:02:50+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'on 10,21 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_auth` WHERE ( auth_id on 10,21 ) 
+
+[ 2017-07-26T20:04:35+08:00 ] 127.0.0.1 /index.php/back/index/left
+ERR: syntax error, unexpected 'role_auth_ids' (T_STRING), expecting ',' or ')'
+

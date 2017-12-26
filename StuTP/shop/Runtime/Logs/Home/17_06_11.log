@@ -1,0 +1,243 @@
+[ 2017-06-11T18:36:59+08:00 ] ::1 /StuTP/shop/index.php/
+ERR: Syntax Error in template "D:/phpwamp/wwwroot/StuTP/shop/Home/View\Index\index.html"  on line 406 ".boxCenterList form{display:inline;}"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2017-06-11T18:38:14+08:00 ] ::1 /StuTP/shop/index.php/
+ERR: Syntax Error in template "D:/phpwamp/wwwroot/StuTP/shop/Home/View\Index\index.html"  on line 408 ".boxCenterList form a{color:#404040; text-decoration:underline;}"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Elogo.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20CSS_URL;?%3Estyle.css
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Ebiao6.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Ebiao7.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Ebiao3.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_1.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E3_thumb_G_1241422082679.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_2.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_3.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E12_thumb_G_1241965978410.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_4.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_5.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E24_thumb_G_1241971981429.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_6.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_7.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E1240802922410634065.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E1240803144788047486.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E111.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E1240803062307572427.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E1_thumb_G_1240902890710.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E8_thumb_G_1241425513488.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Edi.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Eecmoban_link.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Eyongda_logo.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E9_thumb_G_1241511871555.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:38:30+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Esousuo.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Elogo.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20CSS_URL;?%3Estyle.css
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Ebiao3.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_1.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Ebiao6.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Ebiao7.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_2.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E3_thumb_G_1241422082679.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E24_thumb_G_1241971981429.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E12_thumb_G_1241965978410.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_5.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_4.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_3.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E1240803062307572427.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_6.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E1240803144788047486.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Etop_7.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E9_thumb_G_1241511871555.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E1_thumb_G_1240902890710.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E8_thumb_G_1241425513488.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Edi.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E1240802922410634065.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Eecmoban_link.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Esousuo.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3Eyongda_logo.gif
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:35+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20IMG_URL;?%3E111.jpg
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:45:37+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20CSS_URL;?%3Estyle.css
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:46:46+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20CSS_URL;?%3Estyle.css
+ERR: 无法加载控制器:
+
+[ 2017-06-11T18:46:55+08:00 ] ::1 /StuTP/shop/index.php/%3C?php%20echo%20CSS_URL;?%3Estyle.css
+ERR: 无法加载控制器:
+
+[ 2017-06-11T19:45:55+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20CSS_URL;%20?%3Estyle.css
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:55+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Ebiao6.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:55+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Ebiao3.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:55+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Edi.jpg
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:55+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Ebnt_ur_reg.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:55+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Elogo.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:55+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Ebiao7.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:55+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Esousuo.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:56+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20CSS_URL;%20?%3Estyle.css
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:56+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Ebiao3.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:56+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Ebiao6.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:56+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Ebiao7.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:56+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Ebnt_ur_reg.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:56+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Edi.jpg
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:56+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Elogo.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:56+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Esousuo.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:58+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20CSS_URL;%20?%3Estyle.css
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:58+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Ebiao6.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:58+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Ebiao7.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:58+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Ebiao3.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:58+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Esousuo.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:58+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Elogo.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:58+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Ebnt_ur_reg.gif
+ERR: 非法操作:
+
+[ 2017-06-11T19:45:58+08:00 ] ::1 /StuTP/shop/index.php/Home/User/%3C?php%20echo%20IMG_URL;%20?%3Edi.jpg
+ERR: 非法操作:
+

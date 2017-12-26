@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>{$nav.title}</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link href="{$Think.config.BACK_CSS_URL}mine.css" type="text/css" rel="stylesheet">
+
+    <script type="text/javascript" charset="utf-8" src="/tools/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/tools/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/tools/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+
+    <script src="/Common/Common/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/back/Public/js/echshoop.js"></script>
+
+
+</head>
+
+
+<body>
+
+<div class="div_head">
+            <span>
+                <span style="float:left">当前位置是：{$nav.first}-》{$nav.second}</span>
+                <span style="float:right;margin-right: 8px;font-weight: bold">
+                    <a style="text-decoration: none" href="__MODULE__/{$nav.linkTo.1}">【{$nav.linkTo.0}】</a>
+                </span>
+            </span>
+</div>
+<div></div>
+
+
+{__CONTENT__}
+
+</body>
+</html>

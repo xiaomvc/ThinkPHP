@@ -1,0 +1,52 @@
+<p style="font-weight:bolder; text-indent:1em">当前角色:<span style="color:#0000cc"> {$showlist.role_name}</span></p>
+<div style="font-size: 13px;margin: 10px 5px">
+    <form action="__SELF__" method="post" enctype="multipart/form-data">
+        <table style=" border-color:blueviolet; width:100%" class="table_a" border="1px">
+            <tr>
+                <td colspan="5" align="center">分配权限</td>
+            </tr>
+
+            <!--将所有的一级目录（权限），填充到td中-->
+            <!--将所有的二级目录（权限）,填充到td中的checkbox复选框中-->
+            <foreach name="authA" item="v">
+
+                <tr>
+                    <td style="font-weight: bolder;">{$v.auth_name}</td>
+
+                    <foreach name="authB" item="vv">
+
+                        <if condition="$vv['auth_pid'] eq $v['auth_id']">
+
+                            <td>
+
+                                <!--把input标签放到<label>中使用-->
+                                <!--在input标签中添加<in>或<if>，判断该值是否存在或如果该值等于某值时，是否选中-->
+                                <label><input type="checkbox" value="{$vv.auth_id}" name="auth_ids[]"
+                                    <in name="vv['auth_id']" value="$showlist['role_auth_ids']">checked</in>
+                                    >{$vv.auth_name}</label>
+
+                              <!--  <label><input class="radio" type="radio" name="auth_ids[]" value="{$vv.auth_id}"
+                                    <if condition="vv['auth_id'] eq 1">checked</if>
+                                    > 私有</label>-->
+
+
+
+                            </td>
+
+                        </if>
+
+
+                    </foreach>
+                </tr>
+
+
+            </foreach>
+
+            <tr>
+                <td align="center" colspan="5">
+                    <input type="submit" value="修改">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

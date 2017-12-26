@@ -1,0 +1,12 @@
+[ 2017-07-22T17:15:26+08:00 ] 127.0.0.1 /index.php/home/index/js/jquery-1.8.3.min.js
+ERR: 非法操作:js
+
+[ 2017-07-22T17:15:26+08:00 ] 127.0.0.1 /index.php/home/index/js/index.js
+ERR: 非法操作:js
+
+[ 2017-07-22T17:15:26+08:00 ] 127.0.0.1 /index.php/home/index/js/header.js
+ERR: 非法操作:js
+
+[ 2017-07-22T17:15:26+08:00 ] 127.0.0.1 /index.php/home/index/js/index.js
+ERR: 非法操作:js
+

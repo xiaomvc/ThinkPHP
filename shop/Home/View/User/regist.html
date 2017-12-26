@@ -1,0 +1,60 @@
+<!-- 登录主体部分start -->
+<div class="login w990 bc mt10 regist">
+    <div class="login_hd">
+        <h2>用户注册</h2>
+        <b></b>
+    </div>
+
+
+    <div class="login_bd">
+        <div class="login_form fl">
+            <form action="__SELF__" method="post">
+                <ul>
+                    <li>
+                        <label for="1">用户名：</label>
+                        <input type="text" class="txt" name="username" id="1"/>
+                        <p>3-20位字符，可由中文、字母、数字和下划线组成</p>
+                    </li>
+                    <li>
+                        <label for="1">邮箱：</label>
+                        <input type="text" class="txt" name="email"/>
+                    </li>
+                    <li>
+                        <label for="2">密码：</label>
+                        <input type="password" class="txt" name="password" id="2"/>
+                        <p>6-20位字符，可使用字母、数字和符号的组合，不建议使用纯数字、纯字母、纯符号</p>
+                    </li>
+                    <li>
+                        <label for="3">确认密码：</label>
+                        <input type="password" class="txt" name="password" id="3"/>
+                        <p><span>请再次输入密码</span></p>
+                    </li>
+                    <li class="checkcode">
+                        <label for="4">验证码：</label>
+                        <input type="text" name="checkcode" id="4"/>
+                        <img src="{$Think.config.IMG_URL}checkcode1.jpg" alt=""/>
+                        <span>看不清？<a href="">换一张</a></span>
+                    </li>
+                    <li>
+                        <label for="5">&nbsp;</label>
+                        <input type="checkbox" class="chb" checked="checked" id="5"/> 我已阅读并同意《用户注册协议》
+                    </li>
+                    <li>
+                        <label for="6">&nbsp;</label>
+                        <input type="submit" value="" class="login_btn" id="6"/>
+                    </li>
+                </ul>
+            </form>
+
+
+        </div>
+
+        <div class="mobile fl">
+            <h3>手机快速注册</h3>
+            <p>中国大陆手机用户，编辑短信 “<strong>XX</strong>”发送到：</p>
+            <p><strong>1069099988</strong></p>
+        </div>
+
+    </div>
+</div>
+<!-- 登录主体部分end -->
